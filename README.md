@@ -97,7 +97,7 @@ This repository serves as a record of my growth as an aspiring Data Analyst and 
 
 ## 👨‍💻 Author
 
-**Mojerry Sehloka**
+**Mojery Sehloka**
 
 Aspiring Data Analyst | Excel | SQL | Tableau | Business Intelligence
 
