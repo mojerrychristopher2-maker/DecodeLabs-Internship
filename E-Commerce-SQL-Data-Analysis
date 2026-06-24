@@ -1,0 +1,136 @@
+-- SQL Data Analyses
+
+SELECT *
+FROM dataset_for_analytics
+LIMIT 10;
+
+SELECT COUNT(*) AS Total_Orders
+FROM dataset_for_analytics;
+
+SELECT ROUND(SUM(TotalPrice), 2) AS Total_Revenue
+FROM dataset_for_analytics;
+
+SELECT ROUND(AVG(TotalPrice), 2) AS Avg_Order_Value
+FROM dataset_for_analytics;
+
+SELECT
+    PaymentMethod,
+    COUNT(*) AS Orders
+FROM dataset_for_analytics
+GROUP BY PaymentMethod
+ORDER BY Orders DESC;
+
+SELECT
+    Product,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY Product
+ORDER BY Revenue DESC;
+
+SELECT
+    CustomerID,
+    ROUND(SUM(TotalPrice),2) AS Total_Spent
+FROM dataset_for_analytics
+GROUP BY CustomerID
+ORDER BY Total_Spent DESC
+LIMIT 10;
+
+SELECT
+    OrderStatus,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY OrderStatus
+ORDER BY Revenue DESC;
+
+SELECT
+    ReferralSource,
+    COUNT(*) AS Orders
+FROM dataset_for_analytics
+GROUP BY ReferralSource
+ORDER BY Orders DESC;
+
+-- Fix Excel serial dates
+
+SELECT Date
+FROM dataset_for_analytics
+LIMIT 10;
+
+ALTER TABLE dataset_for_analytics
+ADD COLUMN Order_Date DATE;
+
+UPDATE dataset_for_analytics
+SET Order_Date = DATE_ADD('1899-12-30', INTERVAL Date DAY);
+
+SELECT
+    YEAR(Order_Date) AS Year,
+    MONTH(Order_Date) AS Month,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY Year, Month
+ORDER BY Year, Month;
+
+SELECT
+    CouponCode,
+    COUNT(*) AS Usage_Count
+FROM dataset_for_analytics
+WHERE CouponCode IS NOT NULL
+GROUP BY CouponCode
+ORDER BY Usage_Count DESC;
+
+SELECT
+    Product,
+    ROUND(AVG(Quantity),2) AS Avg_Quantity
+FROM dataset_for_analytics
+GROUP BY Product
+ORDER BY Avg_Quantity DESC;
+
+SELECT
+    Product,
+    COUNT(*) AS Orders,
+    SUM(Quantity) AS Total_Units_Sold,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY Product
+ORDER BY Revenue DESC;
+
+SELECT
+    PaymentMethod,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY PaymentMethod
+ORDER BY Revenue DESC;
+
+SELECT
+    Product,
+    ROUND(SUM(TotalPrice),2) AS Revenue
+FROM dataset_for_analytics
+GROUP BY Product
+HAVING SUM(TotalPrice) > 50000
+ORDER BY Revenue DESC;
+
+SELECT
+    OrderID,
+    Product,
+    Quantity,
+    TotalPrice
+FROM dataset_for_analytics
+ORDER BY TotalPrice DESC
+LIMIT 5;
+
+ALTER TABLE dataset_for_analytics
+CHANGE COLUMN `ï»¿OrderID` OrderID VARCHAR(10);
+
+SELECT
+    CustomerID,
+    ROUND(SUM(TotalPrice),2) AS Total_Spent
+FROM dataset_for_analytics
+GROUP BY CustomerID
+HAVING SUM(TotalPrice) > 1000
+ORDER BY Total_Spent DESC;
+
+SELECT
+    COUNT(*) AS Total_Orders,
+    COUNT(DISTINCT CustomerID) AS Total_Customers,
+    ROUND(SUM(TotalPrice),2) AS Total_Revenue,
+    ROUND(AVG(TotalPrice),2) AS Avg_Order_Value
+FROM dataset_for_analytics;
