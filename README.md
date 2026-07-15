@@ -201,7 +201,7 @@ This repository serves as a record of my growth as an aspiring Data Analyst and 
 
 🔗 **GitHub:** https://github.com/Mojerydash
 
-💼 **LinkedIn:** *(Add your LinkedIn profile URL here)*
+💼 **LinkedIn:** https://www.linkedin.com/in/mojery-sehloka-412322386?trk=contact-info
 
 ---
 
