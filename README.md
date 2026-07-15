@@ -1,6 +1,6 @@
 # 📊 DecodeLabs Data Analytics Internship
 
-Welcome to my Data Analytics Internship repository, where I document projects completed during the DecodeLabs Industrial Training Program. This repository showcases my journey in developing practical data analytics skills through real-world datasets, business problem-solving, and hands-on analysis.
+Welcome to my Data Analytics Internship repository, where I document projects completed during the DecodeLabs Industrial Training Program. This repository showcases my journey in developing practical data analytics skills through real-world datasets, business problem-solving and hands-on analysis.
 
 ---
 
@@ -45,7 +45,7 @@ Each project builds upon the previous one, following a complete data analytics w
 
 ## 📈 Project 2 – Exploratory Data Analysis (EDA)
 
-**Objective:** Discover patterns, trends, and insights from business data.
+**Objective:** Discover patterns, trends and insights from business data.
 
 ### Tasks Completed
 - Calculated descriptive statistics
@@ -181,13 +181,13 @@ This internship follows a structured analytics workflow:
 
 **Project 4 →** Interactive Power BI Dashboard
 
-Together, these projects demonstrate the complete analytics lifecycle—from preparing raw data to delivering business insights through interactive dashboards.
+Together, these projects demonstrate the complete analytics lifecycle, from preparing raw data to delivering business insights through interactive dashboards.
 
 ---
 
 # 📌 Repository Goal
 
-This repository serves as a record of my growth as an aspiring Data Analyst and demonstrates my commitment to continuous learning, problem-solving, and data-driven decision-making. Each project reflects practical experience in applying analytical techniques to real-world business datasets while strengthening my technical skills in Excel, SQL, and Power BI.
+This repository serves as a record of my growth as an aspiring Data Analyst and demonstrates my commitment to continuous learning, problem-solving and data-driven decision-making. Each project reflects practical experience in applying analytical techniques to real-world business datasets while strengthening my technical skills in Excel, SQL and Power BI.
 
 ---
 
