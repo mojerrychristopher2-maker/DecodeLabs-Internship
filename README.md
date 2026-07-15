@@ -18,7 +18,7 @@ The DecodeLabs Data Analytics Internship is designed to simulate the responsibil
 - Analytical Thinking
 - Reporting & Insight Generation
 
-Each project builds upon the previous one, following a complete data analytics workflow—from preparing raw data to creating interactive dashboards that support business decision-making.
+Each project builds upon the previous one, following a complete data analytics workflow, from preparing raw data to creating interactive dashboards that support business decision-making.
 
 ---
 
